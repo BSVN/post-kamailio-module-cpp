@@ -1,4 +1,4 @@
-#
+SHELL := /bin/bash
 
 include ../../Makefile.defs
 auto_gen=
