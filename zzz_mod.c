@@ -60,18 +60,16 @@ static param_export_t params[] = {
 
 /* Module interface */
 struct module_exports exports = {
-  "zzz",
+  "zzz",        /* module name */
   DEFAULT_DLFLAGS, /* dlopen flags */
-  cmds,      /* Exported functions */
-  params,    /* Exported parameters */
-  0,         /* exported statistics */
-  0,         /* exported MI functions */
-  0,         /* exported pseudo-variables */
-  0,         /* extra processes */
-  mod_init,  /* module initialization function */
-  0,         /* response function*/
-  destroy,   /* destroy function */
-  0          /* per-child init function */
+  cmds,      /* cmd (cfg function) exports */
+  params,   /* param exports */
+  0,        /* RPC method exports */
+  0,         /* pseudo-variables exports */
+  0,          /* response handling function */
+  mod_init,  /* module init function */
+  0,          /* per-child init function */
+  destroy   /* destroy function */
 };
 
 /* Module initialization function - The main initialization function will be called
