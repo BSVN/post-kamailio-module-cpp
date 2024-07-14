@@ -48,7 +48,7 @@ static int get_incremented_number_mod_f (struct sip_msg *msg,
 static cmd_export_t cmds[] = {
   {"get_incremented_number_mod",   (cmd_function)get_incremented_number_mod_f,   1,
    fixup_get_params, fixup_get_params_free, ANY_ROUTE},
-  {0, 0, 0, 0, 0}
+  {0, 0, 0, 0, 0, 0}
 };
 
 /* Exported parameters */
